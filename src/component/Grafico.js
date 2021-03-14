@@ -7,8 +7,8 @@ const styles = {
     fontFamily: "sans-serif",
     textAlign: "center",
     whidth: '100%',
-    data: {stroke: '#ff3b3f'}
-   
+    data: { stroke: '#ff3b3f' }
+
 }
 
 const Grafico = () => {
@@ -19,21 +19,16 @@ const Grafico = () => {
             setData(data);
         });
     }, []);
-    console.log(data);
-    console.log('a ver q llega');
-    console.log(typeof data);
     data.forEach(element => {
         numbers.push(element.file)
 
     });
     numbers.shift();
-    console.log(numbers);
-
     return (
 
         <div >
             <VictoryChart domainPadding={10} style={styles} >
-                <VictoryLine style={styles}  data={numbers} y="Distance-32383" />
+                <VictoryLine style={styles} data={numbers} y="Distance-32383" />
             </VictoryChart>
         </div>
 
