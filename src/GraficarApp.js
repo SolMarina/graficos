@@ -5,7 +5,7 @@ import './GraficarApp.css'
 const GraficarApp = () => {
     return (
         <div className='mainBox'>
-            <h2>Graficar App</h2>
+            <h1>Graficar App</h1>
             <hr></hr>
             <div>
                 <div className='changeBar'>

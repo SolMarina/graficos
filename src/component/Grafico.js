@@ -27,8 +27,8 @@ const Grafico = () => {
     return (
 
         <div >
-            <VictoryChart domainPadding={10} style={styles} >
-                <VictoryLine style={styles} data={numbers} y="Distance-32383" />
+            <VictoryChart domainPadding={20} style={styles} >
+                <VictoryLine  style={styles} data={numbers} y="Distance-32383" />
             </VictoryChart>
         </div>
 
